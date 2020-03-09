@@ -29,3 +29,7 @@ $git status			//붉은색 글씨-첨부가 되지 않았음
 ```shell
 $git push
 ```
+
+*깃허브 사이트에서 수정한 자료를 동기화
+```shell
+$git pull
