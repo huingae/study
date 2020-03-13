@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- a_basic_layout01 -->
+<html lang="ko-KR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<!--[if IE]>
+		<script src=".//ie/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+	<![endif]-->
+	<title>Layout연습하기 1</title>
+	<!-- css -->
+	<style>
+
+		/* reset.css */
+		html,body{width:100%; height:100%;}
+		html,body,
+		h1,h2,h3,h4,h5,h6
+		p,pre,div,img,ul,ol,li,dl,dt,dd{margin:0; padding:0;}
+		ul,ol,li {list-style:none;}
+
+		header,article,section,aside,nav,footer,main,figure {display:block;} /* block선언 */
+
+		/* design */
+		#box{margin:200px auto;
+			width:600px; height:auto;}
+			#headBox{width:100%; height:100px; background-color:pink;}
+			#sectionBox{width:100%; height:auto; background-color:lightyellow;}
+			.section_child{float:left; width:70%; height:150px;}/* 공통된 스타일을 묶어줌  */
+			.article_area{background-color:green;}
+			.container_area{background-color:darkgreen;}
+			.aside_area{margin-top:-150px; width:30%; height:300px; background-color:lightgreen;}
+			.pan{clear:both; width:100%; height:0; background-color: #777;}/* section이 높이를 가질 수 있게 해서 footer가 내려올 수 있게 해주는 막 */
+
+			#footBox{width:100%; height:100px; background-color:lightblue;}
+
+	</style>
+</head>
+<body>
+	<!-- layout -->
+	<div id="box">
+		<!-- #headBox -->
+		<header id="headBox">
+			header
+		</header>
+		<!-- // #headBox -->
+
+		<!-- #sectionBox -->
+		<section id="sectionBox">
+			
+		<article class="article_area section_child"></article>
+		<article class="container_area section_child"></article>
+		<aside class="aside_area section_child"></aside>
+
+		<div class="pan"></div>
+		</section>
+		<!-- // #secdtionBox -->
+		<!-- #footBox -->
+		<footer id="footBox">
+			footer
+		</footer>
+		<!-- // #footBox -->
+	</div>
+
+	<!-- script -->
+	<script></script>
+</body>
+</html>
