@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- base_code_layout_02 -->
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<!--[if IE]>
+		<script src="./ie/html5shiv/dist/html5shiv.min.ds"></script>
+	<![endif]-->
+	<title>레이아웃 과제</title>
+	<!-- css -->
+	<style>
+		/* reset.css */
+		html,body{width:100%; height:100%;}
+		html,body,h1,h2,h3,h4,h5,h6
+		p,pre,div,img,ul,ol,li,dl,dt,dd{margin:0; padding:0;}
+
+		ul,ol,li{list-style:none;}
+
+		header,article,section,aside,nav,footer,main,figure {display:block;}
+
+		/* design */
+
+		#wrap{margin:auto; width:960px; height:1200px; background-color:#3cf;}
+		#headBox{width:100%; height:120px; background-color:#f4f;}
+		h1{float:left; margin:10px; width:150px; height:100px; background-color:#fff;}
+		.nav_area{float:right; width:520px; height:120px;}
+		#unb{float:right; margin:10px 10px 5px 10px; width:220px; height:40px; background-color:#fff;}
+		#gnb{float:right; margin:5px 10px 10px 10px; width:500px; height:50px; background-color:#fff;}
+		.pan_02{clear:both; width:100%; height:0px; background-color:#fff;}
+		#viewBox{width:100%; height:450px; background-color:#f80;}
+		#contentBox{width:100%; height:500px; background-color:#2ae;}
+		.ul_area{float:left; width:200px; height:500px; background-color:#25e;}
+			.list_01{margin:20px 0px; width:100%; height:100px; background-color:purple;}
+		.lnb_list{float:left; width:760px; height:200px; background-color:#2c0;}
+		.lnb_content{float:left; width:760px; height:300px; background-color:#243;}
+			.article_child{float:left; width:380px; height:100%;}
+			.small_box_1{background-color:#c83;}
+			.small_box_2{background-color:#c43;}
+
+		.pan_01{clear:both; width:100%; height:0px; background-color:#fff;}
+		#footBox{width:100%; height:130px; background-color:#777;}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- headBox -->
+		<header id="headBox">
+			<h1>h1</h1>
+			<div class="nav_area">
+				<nav id="unb">unb</nav>
+				<nav id="gnb">gnb</nav>
+			</div>
+			<div class="pan_02"></div>
+		</header>
+		<!-- //headBox -->
+
+		<!-- viewBox -->
+		<section id="viewBox"></section>
+		<!-- //viewBox -->
+
+		<!-- contentBox -->
+		<section id="contentBox">
+
+		<ul class="ul_area">
+			<li class="list_01">li</li>
+			<li class="list_01">li</li>
+			<li class="list_01">li</li>
+			<li class="list_01">li</li>
+		</ul>
+		<article class="lnb_list"></article>
+		<article class="lnb_content">
+			<div class="small_box_1 article_child"></div>
+			<div class="small_box_2 article_child"></div>
+		</article>
+
+		<div class="pan_01"></div>
+
+		</section>
+		<!-- //contentBox -->
+
+		<!-- footBox -->
+		<footer id="footBox"></footer>
+
+	</div>
+
+	<!-- script -->
+	<script></script>
+</body>
+</html>
